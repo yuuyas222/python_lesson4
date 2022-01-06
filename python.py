@@ -36,9 +36,16 @@ for job in team:
     print("<option>" + job + "</option>")
 print("</select>")
 
-line = input().rstrip().split(",")
-print(line)
-print(len(line))
 
-for enemy in line:
-    print(enemy + "が現れた！")
+import sys
+for line in sys.stdin.readlines():
+    print(line.rstrip())
+
+# line = input().rstrip().split(",")
+# print(line)
+# print(len(line))
+
+# for enemy in line:
+#     print(enemy + "が現れた！")
+
+
